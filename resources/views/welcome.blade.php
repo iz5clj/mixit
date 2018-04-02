@@ -1,4 +1,4 @@
-@extends('layouts.app') 
+@extends('layouts.master') 
 
 @section('content')
 <header>
@@ -41,4 +41,16 @@
               </a>
     </div>
 </header>
+@endsection
+
+@section('javascript')
+
+<script>
+$(function(){
+    $('.carousel').carousel({
+      interval: 3000
+    });
+});
+</script>
+
 @endsection
